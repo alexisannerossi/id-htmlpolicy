@@ -1,5 +1,5 @@
 ---
-title: RFC Policy for the HTML publication format
+title: RFC Policy for HTML and CSS formats
 docname: draft-rossi-htmlpolicy-00
 venue:
   group: RSWG
@@ -10,7 +10,7 @@ venue:
   latest: "https://github.com/alexisannerossi/id-htmlpolicy/blob/main/id-htmlpolicy.md"
 stand_alone: true
 v: 3
-obsoletes: 7992
+obsoletes: 7992, 7993
 ipr: trust200902
 kw: Internet-Draft
 cat: info
@@ -30,6 +30,7 @@ normative:
 
 informative:
   RFC7992:
+  RFC7993:
   WAI:
     author:
       org: W3C
@@ -38,21 +39,32 @@ informative:
 
 --- abstract
 
-This document sets policy for the HTML publication format for RFCs. It contains policy requirements, some of which are taken from {{RFC7992}}, and removes any specific implementation or tooling requirements imposed by {{RFC7992}}.
+This document sets policy for the HTML publication format and supporting CSS files for RFCs. It contains policy requirements, some of which are taken from {{RFC7992}} and {{RFC7993}}, and removes any specific implementation or tooling requirements imposed by {{RFC7992}} or {{RFC7993}}.
 
 --- middle
 
 # Introduction
 
-This document sets policy for the HTML publication format for RFCs. It contains policy requirements, some of which are taken from {{RFC7992}}, and removes any specific implementation or tooling requirements imposed by {{RFC7992}}.
+This document sets policy for the HTML publication format and supporting CSS files for RFCs. It contains policy requirements, some of which are taken from {{RFC7992}} and {{RFC7993}}, and removes any specific implementation or tooling requirements imposed by {{RFC7992}} or {{RFC7993}}.
 
-The RFC Publication Center (RPC) is responsible for HTML publication format tooling and implementation decisions. They may want to use the content of {{RFC7992}} as a starting point for documenting those decisions, but they are not bound by {{RFC7992}} and they may change elements of the implementation as needed to support the RFC authoring community as long as those changes are aligned with the policy requirements in this document.
+The RFC Publication Center (RPC) is responsible for HTML publication format and CSS file tooling and implementation decisions. They may want to use the contents of {{RFC7992}} and {{RFC7993}} as a starting point for documenting those decisions, but they are not bound by {{RFC7992}} or {{RFC7993} and they may change elements of the implementation as needed to support the RFC authoring community as long as those changes are aligned with the policy requirements in this document.
 
 # Policy Requirements
 
-HTML publication format tooling and implementation decisions are made or overseen by the RPC, and must adhere to the policy requirements in this document.
+HTML publication format and CSS file tooling and implementation decisions are made or overseen by the RPC, and must adhere to the policy requirements in this document.
 
-* The visual layout of the document will be defined through a cascading style sheet (CSS)
+* The HTML must render correctly on a list of browser versions that the RFC Editor will keep up to date outside of this document. The RPC must consider the probable longevity of wide support and security implications for their implementation decisions.
+* The HTML must display adequately in at least one text-based browser.  Some consumers of the RFC Series can only access the documents on text-based terminals.
+* The HTML document will be self-contained, without requiring external files for images, CSS, JavaScript, or the like.
+* HTML tags should rarely have attributes whose only purpose is to affect the rendered styling, and those will only be used if it is not possible to specify that styling in a CSS file.
+* JavaScript may be supported, but care should be taken to prevent any JavaScript that might alter the semantic content of the RFC.
+* All sections, subsections, figures, and paragraphs should have stable numbered link anchors that can be used to facilitate navigation to and sharing of specific content within the document. Both user-defined and auto-generated anchors must be supported and linkable. Anchors expressed in the source XML should be exposed as anchors in the HTML output as well.
+* The HTML must make it easy to separate sections along with all of their subsections into separate files. This may make it easier to accommodate new publication formats in the future, such as EPUB.
+* The HTML should be as accessible as possible to people with visual disabilities, including those who have color blindness, those who need to scale or change fonts, and those who use screen reading software. This may include allowing easy local override of the default CSS formatting. The RPC will refer to the W3C Accessibility Guidelines {{WAI}} when making decisions regarding accessibility. Note that this policy does not preclude the use of
+      features that are not accessible, as long as those inaccessible feature do not take the place of or hamper the usability of accessible features. The accessibility of the RFCs semantic content should be prioritized.
+* The HTML produced for Internet-Drafts may differ from that produced by the RPC.
+* The HTML should be constructed in a way to allow search engines to discover and extract appropriate content, or to improve search engine optimization (SEO) as long as it avoids changing any semantic content of the RFC.
+* HTML and CSS implementation may change over time. Changes are not required to remain backwards-compatible, although maintaining compatibility where possible is encouraged.
 
 The RPC is authorized to make decisions about the HTML publication format for both technical and editorial reasons
 in order to ensure that published RFCs meet the above policy and to provide consistency across the RFC series.
