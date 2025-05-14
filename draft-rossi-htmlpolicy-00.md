@@ -38,23 +38,21 @@ informative:
 
 --- abstract
 
-This document sets policy for the HTML publication format for RFCs. It contains policy requirements, some of which are taken from {{RFC7992}}, and removes any specific implementation requirements imposed by {{RFC7992}}.
+This document sets policy for the HTML publication format for RFCs. It contains policy requirements, some of which are taken from {{RFC7992}}, and removes any specific implementation or tooling requirements imposed by {{RFC7992}}.
 
 --- middle
 
 # Introduction
 
-This document sets policy for the inclusion of SVGs (Scalable Vector Graphics) in the definitive versions of RFCs and relevant publication formats. It contains policy requirements taken from {{RFC7996}} and removes all requirements related to using a specific SVG profile or specific implementation code.
+This document sets policy for the HTML publication format for RFCs. It contains policy requirements, some of which are taken from {{RFC7992}}, and removes any specific implementation or tooling requirements imposed by {{RFC7992}}.
 
-SVG has been developed by W3C, the World Wide Web Consortium {{ABOUT-SVG}}.
-
-The RFC Publication Center (RPC) is responsible for making SVG tooling and implementation decisions. They may want to use the content of {{RFC7996}} as a starting point for those decisions, but they are not bound by {{RFC7996}} and they may change elements of the implementation as needed to support the RFC authoring community as long as those changes are aligned with the policy requirements in this document.
+The RFC Publication Center (RPC) is responsible for HTML publication format tooling and implementation decisions. They may want to use the content of {{RFC7992}} as a starting point for documenting those decisions, but they are not bound by {{RFC7992}} and they may change elements of the implementation as needed to support the RFC authoring community as long as those changes are aligned with the policy requirements in this document.
 
 # Policy Requirements
 
 HTML publication format tooling and implementation decisions are made or overseen by the RPC, and must adhere to the policy requirements in this document.
 
-* SVGs may be included in RFCs to help explain a concept more clearly, but should not be the only representation of that concept. A good faith effort should be made to assure that descriptions of concepts - which might include protocols, formats, or system architectures - are fully represented in the text of the RFC. At minimum, SVGs should be consistent with the text.
+* The visual layout of the document will be defined through a cascading style sheet (CSS)
 
 The RPC is authorized to make decisions about the HTML publication format for both technical and editorial reasons
 in order to ensure that published RFCs meet the above policy and to provide consistency across the RFC series.
