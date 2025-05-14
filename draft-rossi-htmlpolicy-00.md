@@ -47,7 +47,7 @@ This document sets policy for the HTML publication format and supporting CSS fil
 
 This document sets policy for the HTML publication format and supporting CSS files for RFCs. It contains policy requirements, some of which are taken from {{RFC7992}} and {{RFC7993}}, and removes any specific implementation or tooling requirements imposed by {{RFC7992}} or {{RFC7993}}.
 
-The RFC Publication Center (RPC) is responsible for HTML publication format and CSS file tooling and implementation decisions. They may want to use the contents of {{RFC7992}} and {{RFC7993}} as a starting point for documenting those decisions, but they are not bound by {{RFC7992}} or {{RFC7993} and they may change elements of the implementation as needed to support the RFC authoring community as long as those changes are aligned with the policy requirements in this document.
+The RFC Publication Center (RPC) is responsible for the HTML publication format and CSS file tooling and implementation decisions. They may want to use the contents of {{RFC7992}} and {{RFC7993}} as a starting point for documenting those decisions, but they are not bound by {{RFC7992}} or {{RFC7993} and they may change elements of the implementation as needed to support the RFC authoring community as long as those changes are aligned with the policy requirements in this document.
 
 # Policy Requirements
 
@@ -66,15 +66,14 @@ HTML publication format and CSS file tooling and implementation decisions are ma
 * The HTML should be constructed in a way to allow search engines to discover and extract appropriate content, or to improve search engine optimization (SEO) as long as it avoids changing any semantic content of the RFC.
 * HTML and CSS implementation may change over time. Changes are not required to remain backwards-compatible, although maintaining compatibility where possible is encouraged.
 
-The RPC is authorized to make decisions about the HTML publication format for both technical and editorial reasons
-in order to ensure that published RFCs meet the above policy and to provide consistency across the RFC series.
-The RPC must document their HTML publication format decisions, and all changes to tooling or implementation decisions must be widely communicated to the RFC author community using mailing lists or other means.
+The RPC is authorized to make decisions about the HTML publication format and CSS files for both technical and editorial reasons in order to ensure that published RFCs meet the above policy and to provide consistency across the RFC series.
+The RPC must document their HTML publication format and CSS file decisions in a public place, and all changes to tooling or implementation decisions must be widely communicated to the RFC author community using mailing lists or other means.
 
 # Implementation Guidance
 
 The RPC is expected to solicit community input before making decisions and to publicly explain their reasoning.
 
-Documentation produced by the RPC should describe what technical and editorial constraints apply to the HTML publication format.
+Documentation produced by the RPC should describe what technical and editorial constraints apply to the HTML publication format and CSS files.
 
 Where possible, implementation decisions should focus on specifying what is disallowed, rather than attempting to specify exactly what is allowed.
 
