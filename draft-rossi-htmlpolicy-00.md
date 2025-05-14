@@ -54,7 +54,7 @@ The RFC Publication Center (RPC) is responsible for the HTML publication format 
 HTML publication format and CSS file tooling and implementation decisions are made or overseen by the RPC, and must adhere to the policy requirements in this document.
 
 * The HTML and CSS must not alter or change the display of an RFC in any way that would affect a reader's ability to identify and understand the original semantic content.
-* The HTML must render correctly on a list of commondevices and browser versions that the RFC Editor will keep up to date outside of this document. The RPC must consider both the probable longevity of wide support and security implications for their implementation decisions.
+* The HTML must render correctly on a list of common devices and browser versions that the RFC Editor will keep up to date outside of this document. The RPC must consider both the probable longevity of wide support and security implications for their implementation decisions.
 * The HTML must display adequately in at least one text-based browser.  Some consumers of the RFC Series can only access the documents on text-based terminals.
 * The HTML document will be self-contained, without requiring external files for images, CSS, JavaScript, or the like.
 * HTML tags should rarely have attributes whose only purpose is to affect the rendered styling, and those will only be used if it is not possible to specify that styling in a CSS file.
