@@ -53,7 +53,8 @@ The RFC Publication Center (RPC) is responsible for the HTML publication format 
 
 HTML publication format and CSS file tooling and implementation decisions are made or overseen by the RPC, and must adhere to the policy requirements in this document.
 
-* The HTML must render correctly on a list of browser versions that the RFC Editor will keep up to date outside of this document. The RPC must consider both the probable longevity of wide support and security implications for their implementation decisions.
+* The HTML and CSS must not alter or change the display of an RFC in any way that would affect a reader's ability to identify and understand the original semantic content.
+* The HTML must render correctly on a list of commondevices and browser versions that the RFC Editor will keep up to date outside of this document. The RPC must consider both the probable longevity of wide support and security implications for their implementation decisions.
 * The HTML must display adequately in at least one text-based browser.  Some consumers of the RFC Series can only access the documents on text-based terminals.
 * The HTML document will be self-contained, without requiring external files for images, CSS, JavaScript, or the like.
 * HTML tags should rarely have attributes whose only purpose is to affect the rendered styling, and those will only be used if it is not possible to specify that styling in a CSS file.
@@ -61,7 +62,7 @@ HTML publication format and CSS file tooling and implementation decisions are ma
 * All sections, subsections, figures, and paragraphs should have stable numbered link anchors that can be used to facilitate navigation to and sharing of specific content within the document. Both user-defined and auto-generated anchors must be supported and linkable. 
 * The HTML must make it easy to separate sections along with all of their subsections into separate files. This may make it easier to accommodate new publication formats in the future, such as EPUB.
 * The HTML should be as accessible as possible to people with visual disabilities, including those who have color blindness, those who need to scale or change fonts, and those who use screen reading software. This may include allowing easy local override of the default CSS formatting. The RPC will refer to the W3C Accessibility Guidelines {{WAI}} when making decisions regarding accessibility. Note that this policy does not preclude the use of features that are not accessible, as long as those inaccessible feature do not take the place of or hamper the usability of accessible features. The accessibility of the RFCs semantic content should be prioritized.
-* The HTML produced for Internet-Drafts may differ from that produced by the RPC.
+* The HTML and CSS produced for Internet-Drafts may differ from that produced by the RPC.
 * The HTML should be constructed in a way to allow search engines to discover and extract appropriate content, or to improve search engine optimization (SEO), as long as it avoids changing any semantic content of the RFC.
 * HTML and CSS implementation may change over time. Changes are not required to remain backwards-compatible, although maintaining compatibility where possible is encouraged.
 
