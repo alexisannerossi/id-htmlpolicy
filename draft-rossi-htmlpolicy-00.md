@@ -51,7 +51,7 @@ The RFC Publication Center (RPC) is responsible for the HTML publication format 
 
 # Policy Requirements
 
-HTML publication format and CSS file tooling and implementation decisions are made or overseen by the RPC, and must adhere to the policy requirements in this document.
+HTML publication format and CSS file tooling and implementation decisions are made or overseen by the RPC, and must adhere to the following policy requirements.
 
 * The HTML and CSS must not alter or change the display of an RFC in any way that would affect a reader's ability to identify and understand the original semantic content.
 * The HTML must render correctly on a list of common devices and browser versions that the RFC Editor will keep up to date outside of this document. The RPC must consider both the probable longevity of wide support and the security implications for their implementation decisions.
