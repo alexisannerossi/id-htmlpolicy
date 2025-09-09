@@ -28,7 +28,6 @@ author:
     name: Alexis Rossi
     organization: RFC Series Consulting Editor
     email: rsce@rfc-editor.org
-    
 
 normative:
 
