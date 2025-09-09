@@ -19,11 +19,16 @@ keyword:
  - HTML
 author:
   -
+    ins: P. Hoffman
+    name: Paul Hoffman
+    organization: ICANN
+    email: paul.hoffman@icann.org
+  -
     ins: A. Rossi
     name: Alexis Rossi
     organization: RFC Series Consulting Editor
     email: rsce@rfc-editor.org
-
+    
 
 normative:
 
